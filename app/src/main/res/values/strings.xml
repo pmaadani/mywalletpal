@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">budget app</string>
+    <string name="app_name">MyWalletPal</string>
     <string name="login_page">login</string>
     <string name="get_started">Get Started</string>
 
