@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">budget app</string>
+    <string name="login_page">login</string>
+    <string name="get_started">Get Started</string>
+
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="if_you_don_t_have_an_account_string">If you dont have an Account </string>
+    <string name="login_string">LOGIN</string>
+    <string name="now_string">now</string>
+    <string name="_sign_up_string">Sign Up</string>
+    <string name="username_string">Username</string>
+    <string name="_forgot_password__string">Forgot Password?</string>
+    <string name="password_string">Password</string>
+
+
+    <string name="create_account_string">Create Account</string>
+    <string name="full_name_ek1_string">FULL NAME</string>
+    <string name="email_string">EMAIL</string>
+    <string name="confirm_password_string">CONFIRM PASSWORD</string>
+    <string name="already_have_an_account__string">Already have an account? </string>
+    <string name="_sign_in_string">Sign in</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+
+    <string name="_8_40_am_string">8:40 AM</string>
+    <string name="hello_parisa_string">Hello Parisa</string>
+    <string name="enter_your_monthly_budget_string">Enter your monthly budget</string>
+    <string name="select_the_categories_you_wish_to_use_string">Select the categories you wish to use</string>
+    <string name="housing_string">Housing</string>
+    <string name="transportation_string">Transportation</string>
+    <string name="food_string">Food</string>
+    <string name="utilities_string">Utilities</string>
+    <string name="insurance_string">Insurance</string>
+    <string name="medical___healthcare_string">Medical &amp; Healthcare</string>
+    <string name="video_games_string">video games</string>
+    <string name="sporting_events_string">sporting events</string>
+    <string name="_add_custom_categories_string">Add custom categories</string>
+    <string name="start_string">START</string>
+    <string name="montly_budget_string">MONTLY BUDGET</string>
+    <string name="total">Total</string>
+    <string name="spending">Spending</string>
+
+</resources>

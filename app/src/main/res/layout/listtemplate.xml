@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/rectangle_19_color"
+            android:minHeight="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"/>
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:id="@+id/chart1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:minHeight="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/addManualTextView"
+                android:layout_width="9dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="Add manually"
+                android:textAlignment="center"
+                android:textColor="@color/_add_custom_categories_color"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/scanReciptTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Scan"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/_add_custom_categories_color"
+                android:textSize="10dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/deleteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="Remove"
+                android:textAlignment="center"
+                android:textColor="@color/_add_custom_categories_color"
+                android:textSize="10dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

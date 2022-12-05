@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="155dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="680dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            app:backgroundTint="#D0D0D0"
+            />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="620dp"
+            android:text="forgot password?"
+            android:textColor="@color/rectangle_10_color"
+            android:textSize="10dp"
+            app:backgroundTint="@color/white" />
+
+
+
+
+        <ImageView
+            android:id="@+id/_170710_money_jar_mn_1355_1"
+            android:layout_width="164dp"
+            android:layout_height="267dp"
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="179dp"
+            android:contentDescription="_170710_money_jar_mn_1355_1"
+            android:src="@drawable/_170710_money_jar_mn_1355_1"
+            tools:ignore="ImageContrastCheck" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View   android:id="@+id/rectangle_9"
+                android:background="@drawable/rectangle_9_shape"
+                android:alpha="0.40000000596046"
+                android:layout_marginStart="289dp"
+                android:layout_marginTop="172dp"
+                android:layout_width="57dp"
+                android:layout_height="78dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/now_string"
+                android:layout_marginLeft="302dp"
+                android:layout_marginTop="201dp"
+                android:textColor="@color/now_color"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/rectangle_10"
+                    android:layout_width="435dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="-22dp"
+                    android:layout_marginTop="-11dp"
+                    android:alpha="0.43000000715256"
+                    android:background="@drawable/rectangle_10_shape" />
+
+
+                <ImageView
+                    android:id="@+id/copy_of_my_new_years_resolution_facebook_post_1"
+                    android:layout_width="176dp"
+                    android:layout_height="264dp"
+                    android:layout_marginStart="51dp"
+                    android:layout_marginTop="101dp"
+                    android:contentDescription="copy_of_my_new_years_resolution_facebook_post_1"
+                    android:src="@drawable/copy_of_my_new_years_resolution_facebook_post_1" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <View
+                        android:id="@+id/rectangle_12"
+                        android:layout_width="322dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="570dp"
+                        android:background="@drawable/rectangle_12_shape" />
+
+                    <EditText
+                        android:id="@+id/editTextpassword2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="570dp"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/password_string"
+                        android:inputType="textPassword"
+                        android:minHeight="48dp"
+                        android:textColor="@color/username_color" />
+
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="325dp"
+                        android:layout_marginTop="588dp"
+                        android:contentDescription="vector"
+                        android:src="@drawable/vector" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:id="@+id/rectangle_12"
+                            android:layout_width="322dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="500dp"
+                            android:background="@drawable/rectangle_12_shape" />
+
+                        <EditText
+                            android:id="@+id/editTextTextPersonName2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginTop="500dp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:hint="@string/username_string"
+                            android:inputType="textPersonName"
+                            android:minHeight="48dp"
+                            android:textColor="@color/username_color" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/rectangle_10"
+                android:layout_width="435dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="-22dp"
+                android:layout_marginTop="750dp"
+                android:alpha="0.43000000715256"
+                android:background="@drawable/rectangle_10_shape" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/if_you_don_t_have_an_account_string"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="770dp"
+            android:textColor="@color/if_you_don_t_have_an_account_color"
+            android:textSize="10sp"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/AppTheme.RoundedCornerMaterialButton"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="790dp"
+            android:text="Sign up"
+            android:textColor="#7249FF"
+            android:textSize="10dp"
+            app:backgroundTint="@color/white"
+            android:textStyle="bold"
+            />
+
+
+
+    </RelativeLayout>
+</ScrollView>

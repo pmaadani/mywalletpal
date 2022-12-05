@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/header"/>
+
+
+        <Button
+            android:id="@+id/datePickerButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="DEC 2022"
+            android:textSize="15sp"
+            android:textColor="@color/enter_your_monthly_budget_color"
+            style="?android:spinnerStyle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="17dp"
+            android:onClick="openDatePicker"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginStart="130dp"
+            />
+
+
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="342dp"
+                android:layout_height="252dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#BBA7EF"
+                android:src="@drawable/rectangle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/vector_ek1"
+                android:layout_width="17dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="248dp"
+                android:layout_marginTop="120dp"
+                android:contentDescription="vector_ek1"
+                android:src="@drawable/vector_ek1" />
+
+            <ImageView
+                android:id="@+id/vector_ek2"
+                android:layout_width="19dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="248dp"
+                android:layout_marginTop="190dp"
+                android:contentDescription="vector_ek2"
+                android:src="@drawable/vector_ek2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="115dp"
+                android:text="Total Savings"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="275dp"
+                android:layout_marginTop="180dp"
+                android:text="Total Spending"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="55dp"
+                android:text="Total Budget"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="205dp"
+                android:text="Remaining Balance"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/totalmonthlybudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="95dp"
+                android:text="TextView"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/remainingbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="78dp"
+                android:layout_marginTop="230dp"
+                android:text="TextView"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/total"
+                android:layout_width="179dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="275dp"
+                android:backgroundTint="@color/rectangle_33_color"
+                android:text="@string/total"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/categorRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="370dp" />
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/backtoaddcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD CATEGORY"
+            android:layout_marginTop="730dp"
+            android:layout_marginStart="285dp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:textColor="@color/_sign_up_color"/>
+
+
+        <Button
+            android:id="@+id/saving"
+            android:layout_width="179dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="275dp"
+            android:backgroundTint="@color/rectangle_19_color"
+            android:text="Saving"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="lollipop" />
+
+    </RelativeLayout>
+
+</LinearLayout>
