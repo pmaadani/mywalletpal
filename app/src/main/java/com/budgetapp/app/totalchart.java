@@ -69,9 +69,8 @@ public class totalchart extends AppCompatActivity {
             for (MonthlyBudget mb : mbList) {
                 xVals.add(mb.getMonthYear());
 
-                String[] yearMonthSplit=mb.getMonthYear().split(" ");
                 earnings.add(new BarEntry(counter,Float.valueOf(mb.getMonthlybudget())));
-                List<Transaction> allTr= db.getAllTransactionsForMonthYear(yearMonthSplit[1],yearMonthSplit[0]);
+                List<Transaction> allTr= db.getAllTransactionsForMonthYear(mb.getMonthYear());
                 float spending=0;
                 for (Transaction tr : allTr) {
                     spending += Float.valueOf(tr.getAmount());

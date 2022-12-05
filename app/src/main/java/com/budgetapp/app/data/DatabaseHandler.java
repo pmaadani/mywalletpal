@@ -78,6 +78,7 @@ public class DatabaseHandler extends SQLiteOpenHelper  {
         values.put(Util.KEY_MONTHYEAR,mb.getMonthYear());
 
         db.insert(Util.MONTHLYBUDGETS_TABLE_NAME,null,values);
+        db.replace(Util.MONTHLYBUDGETS_TABLE_NAME,null,values);
         ///Log.d("DBHandler","addMonthlybudget: " + "item added");
         db.close();
     }
@@ -163,12 +164,12 @@ public class DatabaseHandler extends SQLiteOpenHelper  {
         return transList;
     }
 
-    public List<Transaction> getAllTransactionsForMonthYear(String year,String month){
+    public List<Transaction> getAllTransactionsForMonthYear(String monthYear){
         List<Transaction> transList=new ArrayList<>();
         SQLiteDatabase db = this.getReadableDatabase();
 
         String selectAll = "SELECT * FROM " + Util.TRANSACTIONS_TABLE_NAME + " WHERE " + Util.KEY_TRANSACTION_DATE + " LIKE ? " ;
-        String param1 =month+" "+year;
+        String param1 =monthYear;
         Cursor cursor= db.rawQuery(selectAll, new String[]{param1});
 
         //Loop through our data

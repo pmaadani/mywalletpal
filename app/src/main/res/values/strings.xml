@@ -42,4 +42,12 @@
     <string name="total">Total</string>
     <string name="spending">Spending</string>
 
+    <string-array name="months_array">
+        <item>Dec 2022</item>
+        <item>Jan 2023</item>
+        <item>Feb 2023</item>
+        <item>Mar 2023</item>
+        <item>Apr 2023</item>
+    </string-array>
+
 </resources>

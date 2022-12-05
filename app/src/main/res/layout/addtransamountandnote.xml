@@ -24,6 +24,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="440dp"
+        android:inputType="number"
         android:ems="10"
         android:hint="Transaction Amount"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,7 +70,7 @@
         app:srcCompat="@drawable/vector_2" />
 
     <TextView
-        android:id="@+id/transcatTextView"
+        android:id="@+id/categoryNameTextView"
         android:layout_width="173dp"
         android:layout_height="39dp"
         android:layout_marginTop="137dp"

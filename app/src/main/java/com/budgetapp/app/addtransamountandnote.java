@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,19 +38,17 @@ public class addtransamountandnote extends AppCompatActivity {
         //Get the bundle
         Bundle bundle = getIntent().getExtras();
 
-        String title = bundle.getString("first", "Default");
+        String title = bundle.getString("categoryName", "Default");
+        String selectedMonthYear=bundle.getString("monthYear", "Default");
 
         //Log.d("Main", "title cat: " + title);
 
 
-        List<Transaction> transactionList = db.getAllTransactions();
-        for (Transaction transaction: transactionList){
-            //Log.d("Main", "trans amount: " + transaction.getAmount());
-            //Log.d("Main", "trans category: " + transaction.getText());
-           // Log.d("Main", "trans note: " + transaction.getCategory());
-        }
+
 
         mButton = (Button) findViewById(R.id.addamountnote);
+        TextView catTextView=findViewById(R.id.categoryNameTextView);
+        catTextView.setText(title);
         mEditAmount = (EditText) findViewById(R.id.transamount);
         mNote = (EditText) findViewById(R.id.trannote);
 
@@ -66,13 +65,11 @@ public class addtransamountandnote extends AppCompatActivity {
                         newTransaction.setAmount(mEditAmount.getText().toString());
                         newTransaction.setText(mNote.getText().toString());
                         newTransaction.setCategory(title);
-                        Date date = new Date();
-                        SimpleDateFormat formatter = new SimpleDateFormat("MMM yy");
-                        String dateStr = formatter.format(date);
-                        newTransaction.setTransaction_date(dateStr);
+                        newTransaction.setTransaction_date(selectedMonthYear);
                         db.addTransaction(newTransaction);
 
                         Intent intent = new Intent(addtransamountandnote.this, firstpage.class);
+                        intent.putExtras(bundle);
                         startActivity(intent);
 
                     }

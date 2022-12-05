@@ -42,7 +42,7 @@ public class page2 extends Activity {
             @Override
             public void onClick(View view) {
 
-                if (db.getMonthlybudget("Dec 22") == null ) {
+                if (db.getMonthlybudget("Dec 2022") == null ) {
                     Intent intent = new Intent(page2.this, categorizes.class);
                     startActivity(intent);
                 } else {

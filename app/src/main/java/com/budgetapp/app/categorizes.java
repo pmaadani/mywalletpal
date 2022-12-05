@@ -201,7 +201,8 @@ public class categorizes extends Activity {
                         //add to Category name db
                         MonthlyBudget monthlyBudget = new MonthlyBudget();
                         monthlyBudget.setMonthlybudget(mEdit.getText().toString());
-                        monthlyBudget.setMonthYear("Dec 22");
+                        String[] month_array = getResources().getStringArray(R.array.months_array);
+                        monthlyBudget.setMonthYear(month_array[0]);
                         db.addMonthlybudget(monthlyBudget);
 
                         Intent intent = new Intent(categorizes.this, addcustomcategory.class);
